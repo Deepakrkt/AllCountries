@@ -46,36 +46,6 @@ searchInput.addEventListener('input',  (e) => {
   renderCountries(filteredCountries)
 })
 
-// themeChanger.addEventListener('click', () => {
-//   document.body.classList.toggle('dark')
-// })
-
-
-// themeChanger.addEventListener('click', () => {
-//     document.body.classList.toggle('dark');
-//     if (document.body.classList.contains('dark')) {
-//       localStorage.setItem('theme', 'dark');
-//     } else {
-//       localStorage.setItem('theme', 'light');
-//     }
-//   });
-  
-//   function applySavedTheme() {
-//     const savedTheme = localStorage.getItem('theme');
-//     if (savedTheme && savedTheme === 'dark') {
-//       document.body.classList.add('dark');
-//     }
-//   }
-  
-//   // Apply the saved theme when the page loads
-//   applySavedTheme();
-
-
 themeChanger.addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-    if (document.body.classList.contains('dark')) {
-      localStorage.setItem('theme', 'dark');
-    } else {
-      localStorage.removeItem('theme');
-    }
-  });
+  document.body.classList.toggle('dark')
+})
